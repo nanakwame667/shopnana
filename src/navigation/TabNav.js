@@ -32,7 +32,7 @@ function TabNavigator(){
                 iconName = focused ? 'ios-settings' : 'ios-settings-outline';
                 }
               // You can return any component that you like here!
-                return <Icon name={iconName} size={35} color={color} />;
+                return <Icon name={iconName} size={30} color={color} />;
             },
             tabBarActiveTintColor: '#004960',
             tabBarInactiveTintColor: 'gray',
