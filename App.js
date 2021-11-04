@@ -13,6 +13,7 @@ import {useFonts} from 'expo-font';
 
 import AppLoading from 'expo-app-loading';
 
+import TabNavigator from './src/navigation/TabNav';
 import LogInScreen from './src/screens/LogInScreen';
 import RegisterScreen from './src/screens/RegisterScreen';
 import OnBoardingScreen from './src/screens/onBoardingScreen';
@@ -35,6 +36,7 @@ export default function App() {
         <Stack.Screen name="onBoarding" component={OnBoardingScreen} options={{headerShown: false}}/>
         <Stack.Screen name="Register" component={RegisterScreen} options={{headerShown: false}}/>
         <Stack.Screen name="LogIn" component={LogInScreen} options={{headerShown: false}}/>
+        <Stack.Screen name="Tabs" component={TabNavigator} options={{headerShown:false}}/>
         </Stack.Navigator>
     </NavigationContainer>
   );

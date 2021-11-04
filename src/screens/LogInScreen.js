@@ -29,7 +29,9 @@ function LogInScreen ({navigation}){
         style={styles.textInput}
         />
         
-        <TouchableOpacity style={styles.register}>
+        <TouchableOpacity style={styles.register}
+        onPress={()=>navigation.navigate('Tabs')}
+        >
             <Text style={{fontFamily:'Poppins_Bold',fontSize:18,color:'#fff'}}>Log In</Text>
         </TouchableOpacity>
         <TouchableOpacity
